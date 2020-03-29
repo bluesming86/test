@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://m.100qm.cn/name -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>易学起名</title>
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="renderer" content="webkit">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="full-screen" content="yes">
+
+    <script src="res/js/jquery2.1.3.js"></script>
+    <script type="text/javascript" src="res/js/layer.js"></script>
+    <link rel="stylesheet" href="res/css/layer.css" id="layui_layer_skinlayercss" style="">
+    <link rel="stylesheet" href="res/css/main.css"  style="">
+
+</head>
+
+<body>
+
+    <img class="J_testFixedTop" id="top_banner" src="res/img/name_index3_banner2.jpg">
+
+    <div class="container">
+        <div class="info_frame shadow" style="border: 2px solid #706d6c;">
+            <div class="input_area">
+                <div class="left title">出生状态</div>
+                <div class="sex" style="overflow:hidden;display:flex;flex-direction:column;height:45px">
+                    <div style="flex:1"></div>
+                    <div>
+                        <span data-value="1" class="state cur" style="width:95px"><i></i>
+                            <font>已出生</font>
+                        </span>
+                        <span data-value="0" class="state" style="width:80px"><i></i>
+                            <font>未出生</font>
+                        </span>
+                        <input type="hidden" id="state" name="state" value="1">
+                    </div>
+                    <div style="flex:1"></div>
+
+                </div>
+            </div>
+            <div class="input_line"></div>
+            <div class="input_area">
+                <div class="left title">姓  氏</div>
+                <div style="overflow:hidden"><input class="input" id="name" type="text" placeholder="请输入姓氏" value="">
+                </div>
+            </div>
+            <div class="input_line"></div>
+            <div class="input_area">
+                <div class="left title">性  别</div>
+                <div class="sex" style="overflow:hidden;display:flex;flex-direction:column;height:45px">
+                    <div style="flex:1"></div>
+                    <div>
+                        <span id="sex_male" data-value="1" class="gender cur"><i></i>
+                            <font>男</font>
+                        </span>
+                        <span data-value="0" class="gender  "><i></i>
+                            <font>女</font>
+                        </span>
+                        <span id="sex_unknown" data-value="-1" class="gender" style="display:none"><i></i>
+                            <font>未知</font>
+                        </span>
+                        <input type="hidden" id="sex" name="gender" value="1">
+                    </div>
+                    <div style="flex:1"></div>
+
+                </div>
+            </div>
+            <div class="input_line"></div>
+            <div class="input_area">
+                <div id="date_title" class="left title">出生时间</div>
+                <div style="overflow:hidden">
+                    <input class="input" type="text" readonly="readonly" data-confirm="false" id="birthday"
+                        placeholder="请选择出生时间" style="font-size:16px" data-toid-date="b_input" data-toid-hour="h_input"
+                        data-toid-minute="m_input">
+                    <input type="hidden" name="birthday" id="b_input">
+                    <input type="hidden" name="hour" id="h_input">
+                    <input type="hidden" name="minute" id="m_input">
+                </div>
+            </div>
+        </div>
+
+        <div id="btn_qiming" data-agl-cvt="5">
+            立即获取美名
+        </div>
+        <div class="test_count J_testFixedShow">
+            已为<span>5832241</span>人起到满意的名字
+            <a href="http://m.100qm.cn/home/history">
+                <div style="float:right;text-decoration:underline">查询历史订单</div>
+            </a>
+        </div>
+        <div class="sepbar"></div>
+        <div class="intro_frame shadow">
+            <img class="label" src="res/img/label1.png">
+            <div class="sepbar"></div>
+            <img src="res/img/title1.jpg">
+            <div style="height:20px"></div>
+            <div style="display:flex">
+                <div style="flex:1"></div>
+                <div style="flex:3"><img src="res/img/circle1.jpg"></div>
+                <div style="flex:1.5"></div>
+                <div style="flex:3"><img src="res/img/circle2.jpg"></div>
+                <div style="flex:1.5"></div>
+                <div style="flex:3"><img src="res/img/circle3.jpg"></div>
+                <div style="flex:1"></div>
+            </div>
+            <div style="display:flex">
+                <div style="flex:0.5"></div>
+                <div style="flex:4" class="short_desc">营业执照批准</div>
+                <div style="flex:0.5"></div>
+                <div style="flex:4" class="short_desc">国学协会认证</div>
+                <div style="flex:0.5"></div>
+                <div style="flex:4" class="short_desc">避开烂俗重名</div>
+                <div style="flex:0.5"></div>
+            </div>
+            <div style="height:20px"></div>
+            <div style="display:flex">
+                <div style="flex:1"></div>
+                <div style="flex:3"><img src="res/img/circle4.jpg"></div>
+                <div style="flex:1.5"></div>
+                <div style="flex:3"><img src="res/img/circle5.jpg"></div>
+                <div style="flex:1.5"></div>
+                <div style="flex:3"><img src="res/img/circle6.jpg"></div>
+                <div style="flex:1"></div>
+            </div>
+            <div style="display:flex">
+                <div style="flex:0.5"></div>
+                <div style="flex:4" class="short_desc">传统生肖才格</div>
+                <div style="flex:0.5"></div>
+                <div style="flex:4" class="short_desc">国学经典古籍</div>
+                <div style="flex:0.5"></div>
+                <div style="flex:4" class="short_desc">支持字辈避讳</div>
+                <div style="flex:0.5"></div>
+            </div>
+            <div style="height:20px"></div>
+            <div style="display:flex">
+                <div style="flex:1"></div>
+                <div style="flex:3"><img src="res/img/circle7.jpg"></div>
+                <div style="flex:1.5"></div>
+                <div style="flex:3"><img src="res/img/circle8.jpg"></div>
+                <div style="flex:1.5"></div>
+                <div style="flex:3"><img src="res/img/circle9.jpg"></div>
+                <div style="flex:1"></div>
+            </div>
+            <div style="display:flex">
+                <div style="flex:0.5"></div>
+                <div style="flex:4" class="short_desc">老师严格把关</div>
+                <div style="flex:0.5"></div>
+                <div style="flex:4" class="short_desc">好评口碑</div>
+                <div style="flex:0.5"></div>
+                <div style="flex:4" class="short_desc">美名详解全面</div>
+                <div style="flex:0.5"></div>
+            </div>
+
+            <div class="sepbar"></div>
+            <img src="res/img/title2.jpg">
+            <p class="intro">
+                以宝宝生辰为基本,<br>
+                计算生辰，结合姓名中才、格及本义,<br>
+                选用诗词及现代化等多维起名方式
+            </p>
+            <img src="res/img/duowei.jpg" style="margin-top:15px">
+            <div class="sepbar"></div>
+            <img src="res/img/title3.jpg">
+            <p class="intro">
+                起名最重要的一环，就是名字的意行<br>
+                要与个人的生辰密码相对应，生辰密码的<br>
+                分析过程复杂而谨慎，并不是简单的加法计算，<br>
+                也不是“缺什么就补什么”那么草率。
+            </p>
+            <img src="res/img/neihan.jpg" style="margin-top:15px">
+        </div>
+
+        <div class="sepbar"></div>
+        <div class="intro_frame shadow">
+            <img class="label" src="res/img/label2.png">
+            <div style="height:15px"></div>
+            <p class="intro">男子&nbsp;公历生日&nbsp;2006年3月18日&nbsp;14时</p>
+            <img src="res/img/bijiao0.jpg">
+            <img src="res/img/bijiao1.jpg">
+            <img class="mt20" src="res/img/bijiao2.jpg">
+            <img class="mt20" src="res/img/bijiao3.jpg">
+            <img class="mt20" src="res/img/bijiao4.jpg">
+            <div style="height:25px"></div>
+        </div>
+
+        <div class="sepbar"></div>
+        <div class="intro_frame shadow">
+            <img class="label" src="res/img/label3.png">
+            <div class="sepbar"></div>
+            <img src="res/img/title4.jpg">
+            <div style="margin:5px 15px">
+                <div class="case">
+                    <div style="">
+                        <img src="res/img/kehu1.png">
+                    </div>
+                    <div style="flex:1">
+                        <p class="name">北京张姓爸爸</p>
+                        <p class="desc">幸好听长辈推荐，才知道起名的学问这么高，国学文化、诗词典籍都考量，专业。</p>
+                    </div>
+                </div>
+
+                <div class="case">
+                    <div style="">
+                        <img src="res/img/kehu2.png">
+                    </div>
+                    <div style="flex:1">
+                        <p class="name">上海王姓妈妈</p>
+                        <p class="desc">老师名不虚传，字辈要求、避讳字都能考虑进去，还根据父母对宝宝的期望，通过名字祝愿宝宝有个美好的未来。感谢老师！</p>
+                    </div>
+                </div>
+
+                <div class="case">
+                    <div style="">
+                        <img src="res/img/kehu3.png">
+                    </div>
+                    <div style="flex:1">
+                        <p class="name">广州陈姓爸爸</p>
+                        <p class="desc">老师起名很专业，宝宝生辰分析和名字寓意讲的都很详细，第一次就选到非常满意的了。</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="sepbar"></div>
+        <div class="intro_frame shadow">
+            <img class="label" src="res/img/label4.png">
+            <div class="sepbar" style="height:30px"></div>
+            <img src="res/img/cert.jpg">
+            <div class="com_intro">
+                名扬天下国学起名网是专业的诚信起名机构，持工商执照合法诚信经营【企业名称、个人姓名策划】。18年来，为超过300万用户择取吉名，享誉海内外。
+            </div>
+            <img src="res/img/huojiang.jpg">
+            <img src="res/img/meiti.jpg">
+            <div style="margin-top:15px;text-align:center;color:#333;font-size:18px">
+
+            </div>
+            <img src="res/img/name_index_intro.jpg">
+            <img src="res/img/fengcai.jpg">
+            <div style="height:15px"></div>
+
+        </div>
+
+
+        <div class="info_frame shadow" style="border: 2px solid #706d6c;">
+            <div class="input_area">
+                <div class="left title">出生状态</div>
+                <div class="sex" style="overflow:hidden;display:flex;flex-direction:column;height:45px">
+                    <div style="flex:1"></div>
+                    <div>
+                        <span data-value="1" class="state2 cur" style="width:95px"><i></i>
+                            <font>已出生</font>
+                        </span>
+                        <span data-value="0" class="state2" style="width:80px"><i></i>
+                            <font>未出生</font>
+                        </span>
+                        <input type="hidden" id="state2" name="state2" value="1">
+                    </div>
+                    <div style="flex:1"></div>
+                </div>
+            </div>
+            <div class="input_line"></div>
+            <div class="input_area">
+                <div class="left title">姓  氏</div>
+                <div style="overflow:hidden"><input class="input" id="name2" type="text" placeholder="请输入姓氏" value="">
+                </div>
+            </div>
+            <div class="input_line"></div>
+            <div class="input_area">
+                <div class="left title">性  别</div>
+                <div class="sex" style="overflow:hidden;display:flex;flex-direction:column;height:45px">
+                    <div style="flex:1"></div>
+                    <div>
+                        <span id="sex_male2" data-value="1" class="gender2 cur"><i></i>
+                            <font>男</font>
+                        </span>
+                        <span data-value="0" class="gender2  "><i></i>
+                            <font>女</font>
+                        </span>
+                        <span id="sex_unknown2" data-value="-1" class="gender2" style="display:none"><i></i>
+                            <font>未知</font>
+                        </span>
+                        <input type="hidden" id="sex2" name="gender" value="1">
+                    </div>
+                    <div style="flex:1"></div>
+
+                </div>
+            </div>
+            <div class="input_line"></div>
+            <div class="input_area">
+                <div id="date_title2" class="left title">出生时间</div>
+                <div style="overflow:hidden">
+                    <input class="input" type="text" readonly="readonly" data-confirm="false" id="birthday2"
+                        placeholder="请选择出生时间" style="font-size:16px" data-toid-date="b_input2" data-toid-hour="h_input2"
+                        data-toid-minute="m_input2">
+                    <input type="hidden" name="birthday" id="b_input2">
+                    <input type="hidden" name="hour" id="h_input2">
+                    <input type="hidden" name="hour" id="m_input2">
+                </div>
+            </div>
+        </div>
+
+        <div id="btn_qiming2" data-agl-cvt="5">
+            立即获取美名
+        </div>
+    </div>
+
+    <div class="di_but btm_fixed" id="btm_fixed" style="height: 55px; display: none;">
+        <button>点击立即获取美名<i></i></button>
+    </div>
+
+    <footer class="public_footer_servers"
+        style="text-align: center; background: rgb(251, 242, 211); padding: 20px 0px; margin: 0px 0px 50px !important; color: rgb(0, 0, 0) !important;">
+        <ul>
+            <li style="font-size: 14px!important;">©2001~2020 国学起名网 全年无休</li>
+            <li style="font-size: 14px!important;">本站提供免费起名要点分析，起名服务需付费。</li>
+            <li style="font-size: 14px!important;"></li>
+            <li style="font-size: 13px!important;">铜陵辰阳文化科技有限公司 | 互联网广告业务合作伙伴</li>
+            <li style="font-size: 13px!important;">皖ICP备18026037号</li>
+
+            <li style="font-size: 14px!important;">本站图案已申请专利，盗用者必追究法律责任</li>
+        </ul>
+    </footer>
+
+
+    <script src="res/js/mantis.min.js"></script>
+    <script src="res/js/sm_common.js" type="text/javascript"></script>
+
+    <script>
+        function copyText(con) {
+            var range = document.createRange();
+            range.selectNode(document.getElementById(con));
+            var selection = window.getSelection();
+            if (selection.rangeCount > 0) selection.removeAllRanges();
+            selection.addRange(range);
+            document.execCommand('Copy');
+            layer.msg('复制成功');
+        }
+    </script>
+
+    <div id="kf_message" class="kf_message" style="width: 14%; max-width: 75px; position: fixed; bottom: 20%; right: 2%; z-index: 1000; display: none;cursor: pointer;">
+        <div>
+            <img style="width:100%" src="res/img/contact_weixin_green.png">
+        </div>
+    </div>
+
+
+    <script>
+        $('.kf_message').click(function () {
+
+        });
+    </script>
+
+    <script>
+        $(window).scroll(function () {
+            var wt = $(window).scrollTop();
+            if (wt > 400) {
+                $('#kf_message').fadeIn();
+                $('.bottom_menu').fadeIn();
+            } else {
+                $('#kf_message').fadeOut();
+                $('.bottom_menu').fadeOut();
+            }
+        });
+    </script>
+
+    <div>
+        <style>
+
+        </style>
+        <div class="luopan_bg_color"></div>
+        <div id="luopan_box" style="display: none">
+            <img src="res/img/luopan.png" alt="" class="img-1">
+            <img src="res/img/zhizheng.png" alt="" class="img-2">
+        </div>
+        <script>
+            function showLoading() {
+                if ($('#luopan_box') == null)
+                    return false;
+                $('#luopan_box').fadeToggle(500);
+                $('#luopan_box').show();
+                $('.luopan_bg_color').show();
+                return true;
+            }
+
+            function hideLoading() {
+                if ($('luopan_box') == null)
+                    return false;
+                $('#luopan_box').hide();
+                $('.luopan_bg_color').hide();
+                return true;
+            }
+        </script>
+    </div>
+
+
+    <div id="safe_pop_tip"
+        style="position: fixed; top: -30px; left: 50%; transform: translateX(-50%); max-width: 640px; width: 100%; height: 30px; background-color: rgba(0, 0, 0, 0.5); z-index: 99; display: none;">
+        <div style="font-size:13px;color:white;padding-left:30px;line-height:30px">
+            本链接为安全链接，可放心浏览
+        </div>
+    </div>
+    <script>
+        $(function () {
+            setTimeout(function () {
+                showSafePopTip();
+            }, 1e3);
+        });
+
+        function showSafePopTip() {
+            $("#safe_pop_tip").animate({
+                top: "0"
+            },
+                1e3,
+                function () {
+                    setTimeout(function () {
+                        hideSafePopTip();
+                    }, 5e3);
+                });
+        }
+
+        function hideSafePopTip() {
+            $("#safe_pop_tip").animate({
+                top: "-30px"
+            },
+                600,
+                function () {
+                    $("#safe_pop_tip").hide();
+                });
+        }
+    </script>
+
+    <script>
+        $('#yeliao_bg').click(function (e) {
+            e.stopPropagation();
+        });
+
+        $('#backBtn').click(function () {
+            $('#yeliao_pop').hide();
+        });
+
+        window.addEventListener("popstate", function (e) {
+            if ($("#yeliao_pop").css('display') == "block") {
+                $("#yeliao_pop").hide();
+            }
+        }, false);
+    </script>
+
+
+    <script>
+        function showYeliao() {
+            $('#yeliao_pop').show();
+            var state = {
+                title: "周易取名",
+                url: "#"
+            };
+            window.history.pushState(state, "周易取名", "#");
+        }
+    </script>
+
+    <script type="text/javascript" src="res/js/layer.js"></script>
+
+
+    <script src="res/js/babyrui-datepicker.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="res/css/babyrui-datepicker.css">
+
+    <script>
+        $('#btn_btm_wechat').click(function (event) {
+            //alert(1);
+            event.stopPropagation();
+        });
+    </script>
+    <script>
+        (new ruiDatepicker).init("#birthday");
+        (new ruiDatepicker).init("#birthday2");
+
+        $('.gender').click(function () {
+            $('.gender').removeClass('cur');
+            $(this).addClass('cur');
+            $('#sex').val($(this).data('value'));
+        });
+
+        $('.gender2').click(function () {
+            $('.gender2').removeClass('cur');
+            $(this).addClass('cur');
+            $('#sex2').val($(this).data('value'));
+        });
+
+        $('.state').click(function () {
+            $('.state').removeClass('cur');
+            $(this).addClass('cur');
+            var state = $(this).data('value');
+            $('#state').val(state);
+            if (state == 0) {
+                $('#sex_unknown').show();
+                $('#date_title').text("预产日期");
+                //$('#time_area').hide();
+                $('#birthday').attr('placeholder', '请选择预产日期');
+
+                $('.gender').removeClass('cur');
+                $('#sex_unknown').addClass('cur');
+                $('#sex').val(-1);
+            } else {
+                $('#sex_unknown').hide();
+                $('#date_title').text("出生时间");
+                $('#birthday').attr('placeholder', '请选择出生时间');
+                //$('#time_area').show();
+
+                var sex = $('#sex').val();
+                if (sex < 0) {
+                    $('.gender').removeClass('cur');
+                    $('#sex_male').addClass('cur');
+                    $('#sex').val(1);
+                }
+            }
+        });
+
+        $('.state2').click(function () {
+            $('.state2').removeClass('cur');
+            $(this).addClass('cur');
+            var state = $(this).data('value');
+            $('#state2').val(state);
+            if (state == 0) {
+                $('#sex_unknown2').show();
+                $('#date_title2').text("预产日期");
+                //$('#time_area').hide();
+                $('#birthday2').attr('placeholder', '请选择预产日期');
+
+                $('.gender2').removeClass('cur');
+                $('#sex_unknown2').addClass('cur');
+                $('#sex2').val(-1);
+            } else {
+                $('#sex_unknown2').hide();
+                $('#date_title2').text("出生时间");
+                $('#birthday2').attr('placeholder', '请选择出生时间');
+                //$('#time_area').show();
+
+                var sex = $('#sex2').val();
+                if (sex < 0) {
+                    $('.gender2').removeClass('cur');
+                    $('#sex_male2').addClass('cur');
+                    $('#sex2').val(1);
+                }
+            }
+        });
+
+        var pattern = /^[\u4e00-\u9fa5]*$/;
+
+        $('#btn_qiming').click(function () {
+            var state = $('#state').val();
+            var name = $('#name').val().trim();
+            var sex = $('#sex').val();
+            var state = $('#state').val();
+            var birth = $('#b_input').val();
+            //var hour = $("#slt_hour").val();
+            //var minute = $("#slt_mini").val();
+            var hour = $("#h_input").val();
+            var minute = $("#m_input").val();
+            var wuxing = $("#wuxing").val();
+
+            wuxing = wuxing == undefined ? '' : wuxing;
+
+            if (name == null || name.length == 0 || !pattern.test(name)) {
+                alert("请输入您的姓氏!(必须是中文)");
+                return;
+            }
+
+            if (name.length > 2) {
+                alert('请输入您的姓氏!(两个字以下)');
+                return;
+            }
+
+            if (birth == null || birth.length == 0) {
+                alert("请选择生日期");
+                return;
+            }
+
+            var o = {};
+            o.gender = sex;
+            o.birthday = birth;
+            o.xing = name;
+            o.hour = (hour == null || hour == '') ? -1 : hour;
+            o.minute = (minute == null || minute == '') ? -1 : minute;
+            o.state = state;//出生状态
+            o.wuxing = wuxing;
+            o.web_no = '';
+
+            showLoading();
+            $.ajax({
+                url: "/name/AddQimingRecord?kwid=7015395252608468",
+                type: "Post",
+                data: o,
+                dataType: "JSON",
+                async: true,
+                success: function (d) {
+                    hideLoading();
+                    if (d.code == 1) {
+                        location.href = "/name/resultzy/" + d.guid + "?track=596248";
+                    } else {
+                        alert(d.msg);
+                    }
+                },
+                error: function () {
+                    hideLoading();
+                    alert("操作异常，请联系客服");
+                }
+            });
+        });
+
+        $('#btn_qiming2').click(function () {
+            var state = $('#state2').val();
+            var name = $('#name2').val().trim();
+            var sex = $('#sex2').val();
+            var state = $('#state2').val();
+            var birth = $('#b_input2').val();
+            //var hour = $("#slt_hour").val();
+            //var minute = $("#slt_mini").val();
+            var hour = $("#h_input2").val();
+            var minute = $("#m_input2").val();
+            var wuxing = $("#wuxing").val();
+
+            wuxing = wuxing == undefined ? '' : wuxing;
+
+            if (name == null || name.length == 0 || !pattern.test(name)) {
+                alert("请输入您的姓氏!(必须是中文)");
+                return;
+            }
+
+            if (name.length > 2) {
+                alert('请输入您的姓氏!(两个字以下)');
+                return;
+            }
+
+            if (birth == null || birth.length == 0) {
+                alert("请选择生日期");
+                return;
+            }
+
+            var o = {};
+            o.gender = sex;
+            o.birthday = birth;
+            o.xing = name;
+            o.hour = (hour == null || hour == '') ? -1 : hour;
+            o.minute = (minute == null || minute == '') ? -1 : minute;
+            o.state = state;//出生状态
+            o.wuxing = wuxing;
+            o.web_no = '';
+
+            showLoading();
+            $.ajax({
+                url: "/name/AddQimingRecord?kwid=7015395252608468",
+                type: "Post",
+                data: o,
+                dataType: "JSON",
+                async: true,
+                success: function (d) {
+                    hideLoading();
+                    if (d.code == 1) {
+                        location.href = "/name/resultzy/" + d.guid + "?track=596248";
+                    } else {
+                        alert(d.msg);
+                    }
+                },
+                error: function () {
+                    hideLoading();
+                    alert("操作异常，请联系客服");
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        //测算底部悬浮
+        (function () {
+            var topShow = $(".J_testFixedShow");
+            if (topShow.length) {
+                var topShow = topShow.offset().top;
+                var topNum = $(".J_testFixedTop").length > 0 ? ($(".J_testFixedTop").offset().top - 0) : 200;
+                var testBtn = $("#btm_fixed");
+                $(window).scroll(function () {
+                    var wt = $(window).scrollTop();
+                    wt > topShow ? (testBtn.fadeIn(), $('.public_footer_servers').css('padding-bottom', '25px')) : (testBtn.fadeOut(), $('.public_footer_servers').css('padding-bottom', '20px'));
+                });
+                testBtn.add('.J_testScrollTop').on('click', function () { $('html,body').scrollTop(topNum) })
+            }
+        })()
+    </script>
+
+    <div id="MANTIS-INVITE-DIV" style="display: none;"></div>
+    <link type="text/css" rel="stylesheet" href="res/css/PCMiniStyle.css">
+    <div id="pcMsgTip" style="display:none;"><span id="pcMsgTipGB" onclick="onClosePCMsgList()"><img
+            src="res/img/close.png" alt="" style="width:100%;"></span>
+        <div id="pcMsgTipMsgList" onclick="mantis.requestChat()"></div>
+    </div>
+</body>
+
+</html>
